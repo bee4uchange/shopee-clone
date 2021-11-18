@@ -1,5 +1,5 @@
 const productGird = document.querySelector("#productGrid");
-const api = "http://localhost:3000/products";
+const api = "/products";
 
 // async function onClick(event) {
 //     const id = event.currentTarget.id;

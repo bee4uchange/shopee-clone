@@ -77,7 +77,7 @@ function createProductDetail(data) {
 }
 
 async function start() {
-    const dataFetch = await fetch(`http://localhost:3000/products/${id}/view`, {method: 'POST'});
+    const dataFetch = await fetch(`/products/${id}/view`, {method: 'POST'});
     const productData = await dataFetch.json();
     createProductDetail(productData);
 }
