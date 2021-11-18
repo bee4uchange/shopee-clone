@@ -14,7 +14,7 @@ let db = null;
 async function startServer() {
     const client = await mongodb.MongoClient.connect(process.env.MONGODB_URL || "mongodb+srv://admin:admin@cluster0.7pmdc.mongodb.net/shopee");
     db = client.db();
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
     console.log("Listening port 3000");
 }
 
