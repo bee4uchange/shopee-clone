@@ -1,0 +1,122 @@
+/* Common class */
+.mt-16 {
+    margin-top: 16px;
+}
+/* Header */
+header {
+    height: 120px;
+    background-color: rgb(249,77,48);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    font-size: 0.7rem;
+}
+/* First nav */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.sub-nav {
+    list-style: none;
+}
+.sub-nav-item {
+    display: inline-block;
+    color: white;
+    margin: 0 8px;
+    position: relative;
+}
+.sub-nav-separate::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #FB9086;
+    height: 12px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%) 
+}
+.sub-nav-link {
+    text-decoration: none;
+    color: white;
+}
+.sub-nav-link:hover {
+    text-decoration: none;
+}
+.sub-nav-item:hover,
+.sub-nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.icon-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 2px;
+}
+.icon-link:hover {
+    color: white;
+    text-decoration: none;
+}
+.icon-no-pointer {
+    cursor: text;
+}
+.icon-no-pointer {
+    color: white;
+}
+/* Second nav */
+.main-icon {
+    color: white
+}
+.main-icon:hover {
+    color: white;
+    text-decoration: none
+}
+.form {
+    width: 100%;
+}
+.search-input {
+    width: 100%;
+    position: relative;
+    padding: 12px 0;
+    border: none;
+    border-radius: 2px;
+}
+::placeholder {
+    position: absolute;
+    left: 10px;
+}
+.search-icon {
+    position: absolute;
+    top: 20%;
+    right: 30px;
+    transform: translateY(-20%);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.sub-nav-category {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 8px;
+    cursor: pointer;
+}
+.my-custom-column {
+    position: relative;
+}
+.second-icon {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    font-size: 2.0rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: unset;
+    }
+}
