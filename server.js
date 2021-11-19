@@ -14,8 +14,10 @@ let db = null;
 async function startServer() {
     const client = await mongodb.MongoClient.connect(process.env.MONGODB_URL || "mongodb+srv://admin:admin@cluster0.7pmdc.mongodb.net/shopee");
     db = client.db();
-    app.listen(process.env.PORT || 3000);
-    console.log("Listening port 3000");
+
+    app.listen((process.env.PORT || 3000), function () {
+        console.log('Listening port 3000');
+    });
 }
 
 app.get("/products", async function (req, res) {
@@ -26,7 +28,7 @@ app.get("/products", async function (req, res) {
 
 app.post("/products/:id/view", async function (req, res) {
     const id = req.params.id;
-    const result = await db.collection("products").findOne({_id: mongodb.ObjectId(id)});
+    const result = await db.collection("products").findOne({ _id: mongodb.ObjectId(id) });
 
     res.status(200).json(result);
 });
