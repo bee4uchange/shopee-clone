@@ -22,10 +22,10 @@ a:hover {
     color: #000;
 }
 
-#ad {
-    position: sticky;
-    bottom: 16%;
-    left: 92%;
+.ad {
+    position: fixed;
+    bottom: 10%;
+    left: 90%;
     z-index: 999;
 }
 
@@ -214,9 +214,10 @@ a:hover {
         width: 100vw;
     }
     
-    #ad {
-        bottom: 10%;
-        left: 75%;
+    .ad {
+        position: fixed;
+        bottom: 8%;
+        left: 70%;
     }
 }
 

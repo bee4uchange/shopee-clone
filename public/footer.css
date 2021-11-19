@@ -76,6 +76,21 @@ hr {
 @media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
-        top: 50px
+        padding: 10px;
+        position: unset;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    #thanh-toan-icon {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    #dvvc-icon {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
     }
 }

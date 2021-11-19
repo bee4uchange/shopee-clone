@@ -61,12 +61,12 @@ a:hover {
     height: 95px;
     width: 100%;
     margin: 5px -5px;
-    /* display: flex;
-    justify-content: flex-start; */
+    display: flex;
 }
 
 .left .image .slider img {
-    height: 82px;
+    /* height: 82px; */
+    padding: 3px;
 }
 
 .productDetail .right {
@@ -96,6 +96,10 @@ a:hover {
 
 .rating .likeNo {
     padding: 0 15px;
+}
+
+.rating #likeIcon {
+    color: rgb(238, 81, 81);
 }
 
 .right .price {
@@ -149,6 +153,7 @@ a:hover {
     background: white;
     border: 1px solid rgba(0,0,0,.09);
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .inputBox #quantityBox {
@@ -157,6 +162,7 @@ a:hover {
     text-align: center;
     border-left: 0;
     border-right: 0;
+    outline: none;
 }
 
 .right .buy .buttonGr {
