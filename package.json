@@ -6,7 +6,7 @@
     "mongodb": "^4.1.4"
   },
   "scripts": {
-    "start": "npm start"
+    "start": "node server.js"
   },
   "name": "server",
   "version": "1.0.0",
