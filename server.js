@@ -12,7 +12,8 @@ app.use(express.json());
 let db = null;
 
 async function startServer() {
-    const client = await mongodb.MongoClient.connect(process.env.MONGODB_URL || "mongodb+srv://admin:admin@cluster0.7pmdc.mongodb.net/shopee");
+    //mongodb+srv://admin:admin@cluster0.7pmdc.mongodb.net/shopee
+    const client = await mongodb.MongoClient.connect(process.env.MONGODB_URL || "mongodb://localhost:27017/shopee");
     db = client.db();
 
     app.listen((process.env.PORT || 3000), function () {
